@@ -1,0 +1,24 @@
+{
+    "topFiveProductList": [
+        {
+            "productName":"商品1",
+            "productImg":"http://thyrsi.com/t6/361/1535002762x-1376440174.png"
+        },
+        {
+            "productName": "商品2",
+            "productImg": "http://thyrsi.com/t6/361/1535002789x-1376440174.png"
+        },
+        {
+            "productName": "商品3",
+            "productImg": "http://thyrsi.com/t6/361/1535002803x-1376440174.png"
+        },
+        {
+            "productName": "商品4",
+            "productImg": "http://thyrsi.com/t6/361/1535002823x-1376440174.png"
+        },
+        {
+            "productName": "商品5",
+            "productImg": "http://thyrsi.com/t6/361/1535002843x-1376440174.png"
+        }
+    ]
+}

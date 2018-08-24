@@ -1,0 +1,49 @@
+{   
+    "leftProduct":{
+        "productTitle": "奶粉奶粉奶粉奶粉奶粉罐头大罐800g1",
+        "productPrice": "888.88",
+        "productImg": "http://thyrsi.com/t6/360/1534830043x-1376440240.png"
+    },
+    "exclusiveProductList":[
+        {
+            "productTitle":"奶粉奶粉奶粉奶粉奶粉罐头大罐800g1",
+            "productPrice":"91.11",
+            "productImg":"//img.hicdn.cn/item/201808/08151712547063.jpeg@150w.webp"
+        },
+        {
+            "productTitle": "奶粉奶粉奶粉奶粉奶粉罐头大罐800g2",
+            "productPrice": "191.11",
+            "productImg": "http://thyrsi.com/t6/360/1534834010x-1404775443.png"
+        },
+        {
+            "productTitle": "奶粉奶粉奶粉奶粉奶粉罐头大罐800g3",
+            "productPrice": "291.11",
+            "productImg": "http://thyrsi.com/t6/360/1534834010x-1404775443.png"
+        },
+        {
+            "productTitle": "奶粉奶粉奶粉奶粉奶粉罐头大罐800g4",
+            "productPrice": "391.11",
+            "productImg": "http://thyrsi.com/t6/360/1534834010x-1404775443.png"
+        },
+        {
+            "productTitle": "奶粉奶粉奶粉奶粉奶粉罐头大罐800g5",
+            "productPrice": "491.11",
+            "productImg": "http://thyrsi.com/t6/360/1534834010x-1404775443.png"
+        },
+        {
+            "productTitle": "奶粉奶粉奶粉奶粉奶粉罐头大罐800g6",
+            "productPrice": "891.11",
+            "productImg": "http://thyrsi.com/t6/360/1534834010x-1404775443.png"
+        },
+        {
+            "productTitle": "奶粉奶粉奶粉奶粉奶粉罐头大罐800g 7",
+            "productPrice": "991.11",
+            "productImg": "http://thyrsi.com/t6/360/1534834010x-1404775443.png"
+        },
+        {
+            "productTitle": "奶粉奶粉奶粉奶粉奶粉罐头大罐800g 8",
+            "productPrice": "291.11",
+            "productImg": "http://thyrsi.com/t6/360/1534834010x-1404775443.png"
+        }
+    ]
+}

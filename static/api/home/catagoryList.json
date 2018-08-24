@@ -1,0 +1,114 @@
+{
+    "catagoryList":[
+        {
+            "catagoryId":"1",
+            "catagoryName":"尿裤湿巾",
+            "catagoryImg":"//picserver.hipac.cn/index/201609niaobushi.jpg@.webp",
+            "productList":[
+                {
+                    "productId":"101",
+                    "prductName":"测试商品 奶嘴 国行正品",
+                    "price":111.88,
+                    "productImg":"http://thyrsi.com/t6/360/1534844219x-1566688622.png"
+                },
+                {
+                    "productId": "102",
+                    "prductName": "测试商品 长度测试 测试 测试测试 测试 国行正品",
+                    "price": 222.88,
+                    "productImg": "http://thyrsi.com/t6/360/1534844284x-1566688419.png"
+                },
+                {
+                    "productId": "103",
+                    "prductName": "测试商品 爱婴岛爱婴岛爱婴岛 国行正品",
+                    "price": 333.88,
+                    "productImg": "http://thyrsi.com/t6/360/1534844507x1822611233.png"
+                },
+                {
+                    "productId": "104",
+                    "prductName": "测试商品 美素佳儿美素佳儿美素佳儿美素佳儿 国行正品",
+                    "price": 444.88,
+                    "productImg": "http://thyrsi.com/t6/360/1534844317x-1566688419.png"
+                },
+                {
+                    "productId": "105",
+                    "prductName": "喝了会头大的奶粉 三聚氰胺奶粉 纸尿裤 国行正品",
+                    "price": 555.88,
+                    "productImg": "http://thyrsi.com/t6/360/1534844317x-1566688419.png"
+                },
+                {
+                    "productId": "106",
+                    "prductName": "专卖店产品 喝了不会头大 国行正品",
+                    "price": 66.66,
+                    "productImg": "http://thyrsi.com/t6/360/1534844507x1822611233.png"
+                },
+                {
+                    "productId": "107",
+                    "prductName": "素加较大婴儿配方奶粉900G",
+                    "price": 77.88,
+                    "productImg": "http://thyrsi.com/t6/360/1534844284x-1566688419.png"
+                },
+                {
+                    "productId": "108",
+                    "prductName": "满乐较大婴儿配方奶粉400克",
+                    "price": 888.88,
+                    "productImg": "http://thyrsi.com/t6/360/1534844219x-1566688622.png"
+                }
+            ]
+        },
+        {
+            "catagoryId": "2",
+            "catagoryName": "奶粉专区",
+            "catagoryImg": "http://thyrsi.com/t6/361/1535002379x-1404755636.png",
+            "productList": [
+                {
+                    "productId": "201",
+                    "prductName": "太子乐雅臻婴儿配方奶粉1段700G",
+                    "price": 123.88,
+                    "productImg": "http://106.14.200.58/img//upload/goods/middle/6931438415347_1.jpg"
+                },
+                {
+                    "productId": "202",
+                    "prductName": "素加幼儿配方奶粉900G",
+                    "price": 44.88,
+                    "productImg": "http://106.14.200.58/img//upload/goods/middle/3760179012354_1.jpg"
+                },
+                {
+                    "productId": "203",
+                    "prductName": "优加倍乳清蛋白浓缩粉",
+                    "price": 67.88,
+                    "productImg": "http://106.14.200.58/img//upload/goods/middle/6927262186713_1.jpg"
+                },
+                {
+                    "productId": "204",
+                    "prductName": "优加倍乳清蛋白浓缩粉固体饮料（罐）",
+                    "price": 875.88,
+                    "productImg": "http://106.14.200.58/img//upload/goods/middle/6971202260018_1.jpg"
+                },
+                {
+                    "productId": "205",
+                    "prductName": "优加倍铁锌钙镁片（孕妇乳母型）",
+                    "price": 456.88,
+                    "productImg": "http://106.14.200.58/img//upload/goods/middle/6939561790485_1.jpg"
+                },
+                {
+                    "productId": "206",
+                    "prductName": "优加倍钙铁锌粉",
+                    "price": 999.00,
+                    "productImg": "http://106.14.200.58/img//upload/goods/middle/6939561790492_1.jpg"
+                },
+                {
+                    "productId": "207",
+                    "prductName": "飞鹤舒贝诺幼儿配方奶粉3段800G",
+                    "price": 543.11,
+                    "productImg": "http://106.14.200.58/img//upload/goods/middle/6907925772637_1.jpg"
+                },
+                {
+                    "productId": "208",
+                    "prductName": "满乐较大婴儿配方奶粉400克",
+                    "price": 888.88,
+                    "productImg": "http://106.14.200.58/img//upload/goods/middle/6927108060610_1.jpg"
+                }
+            ]
+        }
+    ]
+}
