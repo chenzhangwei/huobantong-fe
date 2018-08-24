@@ -155,6 +155,6 @@ tags: 海拍客,web前端,dot.js,js模板引擎
 
 https://www.cnblogs.com/guohu/p/3870677.html
 
-> ![enter description here](http://img.blog.csdn.net/20130517121955785)
+> ![enter description here](http://thyrsi.com/t6/361/1535091701x1822611401.png)
 
 ### css、js 压缩
