@@ -10,6 +10,9 @@ import axios from 'axios'
 import vueResource from 'vue-resource'
 import { post, fetch, patch, put } from './utils/http'
 import VueLazyLoad from 'vue-lazyload'
+import BackToTop from 'vue-backtotop'
+
+
 
 Vue.use(Icon)
 Vue.use(Container)
@@ -34,6 +37,8 @@ Vue.use(VueLazyLoad, {
   error: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2612369302,4190983231&fm=27&gp=0.jpg',
   loading: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2612369302,4190983231&fm=27&gp=0.jpg'
 })
+
+Vue.use(BackToTop)
 
 Vue.config.productionTip = false
 Vue.prototype.$ajax = axios

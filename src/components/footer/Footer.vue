@@ -75,7 +75,7 @@
                 </div>
             </div>
         </div>
-        <div class="ta-c fs-12 cor-9 pb-30">
+        <div class="ta-c fs-12 cor-9 pb-30 align-center">
             伙伴通科技有限公司 地址:广东省珠海市香洲区物资大厦2楼<br>
             Copyright © 2018 粤ICP备18027931号-1 增值电信业务许可经营许可证 ：粤C1-20180080
         </div>
@@ -186,6 +186,9 @@ export default {
     }
     .mr-5{
         margin-right: 5px;
+    }
+    .align-center{
+        text-align: center;
     }
 </style>
 

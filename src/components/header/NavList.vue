@@ -6,7 +6,7 @@
                     首页
                 </div>
             </li>
-             <li class="father">
+            <li class="father">
                 <div class="brother-showing">
                     食品
                 </div>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </li>
-             <li class="father">
+            <li class="father">
                 <div class="brother-showing">
                     纸品
                 </div>
@@ -68,7 +68,7 @@
                     这里是纸品
                 </div>
             </li>
-             <li class="father">
+            <li class="father">
                 <div class="brother-showing">
                     玩具
                 </div>
@@ -76,12 +76,17 @@
                     这里是玩具
                 </div>
             </li>
-             <li class="father">
+            <li class="father">
                 <div class="brother-showing">
                     服装
                 </div>
                 <div class="element">
                     这里是服装
+                </div>
+            </li>
+            <li class="father" v-if="edit">
+                <div class="borther-showing">
+                    <a href="edit" target="_blank">编辑首页</a>
                 </div>
             </li>
         </ul>
@@ -95,7 +100,8 @@ export default {
         return{
             
         }
-    }
+    },
+    props:['edit']
 }
 </script>
 

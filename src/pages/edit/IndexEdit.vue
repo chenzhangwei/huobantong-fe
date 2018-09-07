@@ -49,23 +49,30 @@
             </div>
         </div>
         <div class="home-nav">
-           <NavList :edit="disabled"/>
+            <NavList :edit="disabled"/>
         </div>
         <div class="home-slider">
             <theSlider />
         </div>
         <div class="main-container">
-           <topFiveProduct/>
-           <exclusiveProduct/>
-           <CatagoryList :edit="disabled" :pointerOrMove="pointerOrMove"/>
+               <topFiveProduct/>
+               <exclusiveProduct/>
+               <CatagoryList :edit="disabled" :pointerOrMove="pointerOrMove"/>
+               <el-button type="primary" icon="el-icon-circle-plus-outline">点我添加新的分类</el-button>
         </div>
         <div class="footer">
            <Footer/>
         </div>
+        <back-to-top bottom="50px" right="50px">
+            <button type="button" class="btn btn-info btn-to-top">
+                <i class="el-icon-caret-top"></i>
+            </button>
+        </back-to-top>
     </div>
 </template>
 <script>
 
+import draggable from 'vuedraggable'
 import theHeader from '../../components/header/TheHeader'
 import theSlider from '../../components/slider/TheSlider'
 import topFiveProduct from '../home/TopFiveProduct'
@@ -75,12 +82,12 @@ import Footer from '../../components/footer/Footer'
 import NavList from '../../components/header/NavList'
 
 export default {
-    name:"layout",
+    name:"indexEdit",
     data(){
         return{
             adList:[],
-            disabled:true,
-            pointerOrMove:"pointer"
+            disabled:false,
+            pointerOrMove:"move"
         }
     },
     components:{
@@ -90,7 +97,8 @@ export default {
         exclusiveProduct,
         CatagoryList,
         Footer,
-        NavList
+        NavList,
+        draggable
     },
     methods: {
     
@@ -102,6 +110,15 @@ export default {
 @import '../../assets/scss/base.scss';
 @import '../../assets/scss/pages/layout.scss';
 @import '../../assets/scss/element-overwrite.scss';
+
+.btn-to-top {
+  width: 60px;
+  height: 60px;
+  padding: 10px 16px;
+  border-radius: 50%;
+  font-size: 22px;
+  line-height: 22px;
+}
 </style>
 
 

@@ -1,37 +1,42 @@
 <template>
     <div class="category">
-        <div v-for="(item, index) in catagoryList" :key="index">
-            <div class="category-name">
-                    <h3 class="category_tit">{{item.catagoryName}}</h3>
-            </div>
-            <div class="categoty-content">
-                <div class="left">
-                    <img v-lazy="item.catagoryImg" alt="">
+        <draggable :options="{animation:500,disabled:edit,sort:true,group:'catagory'}" :class="pointerOrMove" @update="datadragEnd" v-model="catagoryList">
+            <div v-for="(item, index) in catagoryList" :key="index">
+                <div class="category-name">
+                        <h3 class="category_tit">{{item.catagoryName}}</h3>
                 </div>
-                <div class="right">
-                    <div class="item" v-for="(pro, index) in item.productList" :key="index">
-                        <div class="item-img">
-                            <img v-lazy="pro.productImg" alt="">
-                        </div>
-                        <div class="item-title">
-                            <!-- <p>{{pro.prductName}}</p> -->
-                            <div>{{pro.prductName}}</div>
-                            <span>￥{{pro.price}}</span>
+                <div class="categoty-content">
+                    <div class="left">
+                        <img v-lazy="item.catagoryImg" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="item" v-for="(pro, index) in item.productList" :key="index">
+                            <div class="item-img">
+                                <img v-lazy="pro.productImg" alt="">
+                            </div>
+                            <div class="item-title">
+                                <div>{{pro.prductName}}</div>
+                                <span>￥{{pro.price}}</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
+        </draggable>
     </div>
 </template>
 <script>
+import draggable from 'vuedraggable'
 export default {
     data(){
         return{
-            catagoryList:[]
+            catagoryList:[],
         }
     },
+    components:{
+        draggable
+    },
+    props:['edit','pointerOrMove'],
     created() {
         this.$fetch('static/api/home/catagoryList.json')
             .then(response=>{
@@ -41,11 +46,34 @@ export default {
                 console.log(error)
             })
     },
+    computed:{
+      
+    },
+    mounted () {
+        //为了防止火狐浏览器拖拽的时候以新标签打开，此代码真实有效
+        document.body.ondrop = function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+    },
+    methods:{
+        datadragEnd (evt) {
+            evt.preventDefault();
+            console.log('拖动前的索引 :' + evt.oldIndex)
+            console.log('拖动后的索引 :' + evt.newIndex)
+            console.log(JSON.stringify(this.catagoryList))
+        }
+    }
 }
 </script>
 <style scoped lang="scss">
     .category{
-        // margin-top: 10px;
+        .pointer{
+            cursor: pointer;
+        }
+        .move{
+            cursor: move;
+        }
         .category-name{
             margin: 0 auto;
             width: 1190px;
@@ -90,7 +118,7 @@ export default {
                 img{
                     width: 235px;
                     height: 540px;
-                    cursor: pointer;
+                   
                 }
             }
             .right{
@@ -103,11 +131,11 @@ export default {
                     border-top: 1px solid #cecece;
                     height: 270px;
                     box-sizing: border-box;
-                    cursor: pointer;
                     padding:0px 5px;
                     padding-top: 25px;
                     .item-img{
                         box-sizing: border-box;
+                        text-align: center;
                         img{
                            max-width: 100%;
                            max-height: 155px;

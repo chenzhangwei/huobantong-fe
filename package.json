@@ -18,8 +18,10 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
     "vue": "^2.5.2",
+    "vue-backtotop": "^1.4.12",
     "vue-resource": "^1.5.1",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuedraggable": "^2.16.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

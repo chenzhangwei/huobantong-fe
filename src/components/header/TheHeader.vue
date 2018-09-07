@@ -30,14 +30,14 @@ export default {
 <style scoped lang="scss" type="text/css">
   .header{
     background-color: #f1f1f1;
-    height: 40px;
-    line-height: 40px;
+    height: 60px;
+    line-height: 60px;
     li{
       text-decoration: none;
       list-style: none;
       float: left;
       margin-left: 50px;
-      font-size: 12px;
+      font-size: 16px;
       &:first-child{
         color:rgb(255,93,94);
         margin: 0px 80px;
@@ -47,6 +47,7 @@ export default {
       &:last-child{
         float: right;
         margin-right: 80px;
+        font-size: 14px;
         .loginName{
           border-right: 1px solid #cecece;
           padding: 0 10px;
